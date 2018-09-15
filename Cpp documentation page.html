@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<style>
+html,body{
+  min-width:290px;
+    color: #4d4e53;
+    background-color: #B3E5FC;
+    font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.5;
+}
+#navbar{
+  position:fixed;
+  min-width:290px;
+  top:0px;
+  left:0px;
+  width:300px;
+  height:100%;
+  border-right:solid;
+  border-color:rgba(0,22,22,0.4)
+}
+header{
+  color:black;
+  font-size: 30px;
+  margin:10px;
+  text-align:center;
+  font-size:1.8em;
+  font-weight:thin;
+}
+#main-doc header{
+  text-align:left;
+  margin:0px;
+}
+#navbar ul{
+  height:88%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#navbar li{
+  color: #4d4e53;
+  border:1px solid;
+  border-bottom-width:0px;
+  padding:8px;
+  padding-left:45px;
+  list-style: none;
+  position:relative;
+ left:-50px;
+  width:100%;
+  
+}
+#navbar a{
+  color: #4d4e53;
+    text-decoration:none;
+    cursor:pointer;
+} 
+#main-doc{
+  position: absolute;
+  margin-left:310px;
+  padding:20px;
+  margin-bottom:110px;
+}
+section article{
+  color: #4d4e53;
+  margin:15px;
+  font-size:0.96em;
+}
+section li {
+  margin:15px 0px 0px 20px;
+}
+code{
+  display:block;
+    text-align: left;
+  white-space: pre;
+  position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color:#f7f7f7;
+  padding:15px;
+  margin:10px;
+    border-radius:5px;
+}
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+  #navbar ul{
+  border:1px solid;
+    height:207px;
+  }
+    #navbar{
+      background-color:white;
+      position:absolute;
+      top:0;
+      padding:0;
+      margin: 0;
+      width:100%;
+      max-height:275px;
+      border:none;
+      z-index:1;
+      border-bottom:2px solid;
+    }
+  #main-doc{
+    position: relative;
+    margin-left:0px;
+    margin-top:270px;
+  }
+  #main-doc section {
+/*     padding-top: 240px; */
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main-doc{
+    margin-left:-10px;
+  }
+  code{
+    margin-left:-20px;
+    width:100%;
+    padding:15px;
+    padding-left:10px;
+    padding-right:45px;
+    min-width:233px;
+  }
+}
+</style>
+<nav id="navbar">
+  <header>Learn C++</header>
+  <ul> 
+    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+    <a class="nav-link" href="#C++_Overview" rel="internal"><li>C++ Overview</li></a>
+    <a class="nav-link" href="#C++_Data_Structures" rel="internal"><li>C++ Data Structures</li></a>
+    <a class="nav-link" href="#C++_Object_Oriented" rel="internal"><li>C++ Object Oriented</li></a>
+    <a class="nav-link" href="#C++_Advanced" rel="internal"><li>C++ Advanced</li></a>
+    <a class="nav-link" href="#C++_Templates" rel="internal"><li>C++ Templates</li></a>
+    <a class="nav-link" href="#C++_Multithreading" rel="internal"><li>C++ Multithreading</li></a>
+    <a class="nav-link" href="#C++_Web_Programing" rel="internal"><li>C++ Web Programing</li></a>
+    <a class="nav-link" href="#C++_Useful_Resource" rel="internal"><li>C++ Useful Resource</li></a>
+    <a class="nav-link" href="#C++_Standard_Library" rel="internal"><li>C++ Standard Library</li></a>
+    <a class="nav-link" href="#C++_Discussion" rel="internal"><li>C++ Discussion</li></a>
+    <a class="nav-link" href="#Developers_Best_Practice" rel="internal"><li>Developers Best Practice</li></a>
+    <a class="nav-link" href="#HR_Interview_Questions" rel="internal"><li>HR Interview Questions</li></a>
+    <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial adopts a simple and practical approach to describe the concepts of C++</p>
+      <li>Audience: This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to C++.</li>
+      <li>Prerequisites: Before you start practicing with various types of examples given in this tutorial,we are making an assumption that you are already aware of the basics of computer program and computer programming language.</li>
+    </article>
+  </section>
+    <section class="main-section" id="C++_Overview">
+      <header>C++ Overview</header>
+      <article>
+        <p>C++ is a statically typed, compiled, general-purpose, case-sensitive, free-form programming language that supports procedural, object-oriented, and generic programming.</p>
+        <p>C++ is regarded as a middle-level language, as it comprises a combination of both high-level and low-level language features.</p>
+        <p>C++ was developed by Bjarne Stroustrup starting in 1979 at Bell Labs in Murray Hill, New Jersey, as an enhancement to the C language and originally named C with Classes but later it was renamed C++ in 1983.</p>
+        <p>C++ is a superset of C, and that virtually any legal C program is a legal C++ program.</p>
+        <p><strong>Note:</strong>A programming language is said to use static typing when type checking is performed during compile-time as opposed to run-time.</p>
+      </article>
+  </section>
+  <section class="main-section" id="C++_Data_Structures">
+    <header>C++ Data Structures</header>
+    <article>
+      <p>C/C++ arrays allow you to define variables that combine several data items of the same kind, but structure is another user defined data type which allows you to combine data items of different kinds.</p>
+      <p>Structures are used to represent a record, suppose you want to keep track of your books in a library. You might want to track the following attributes about each book -</p>
+      <li>Title</li>
+      <li>Author</li>
+      <li>Subject</li>
+      <li>Book ID</li>
+    </article>
+  </section>
+  <section class="main-section" id="C++_Object_Oriented">
+    <header>C++ Object Oriented</header>
+    <article>
+      <p>C++ fully supports object-oriented programming, including the four pillars of object-oriented development -</p>
+      <li>Encapsulation</li>
+      <li>Data hiding</li>
+      <li>Inheritance</li>
+      <li>Polymorphism</li>
+    </article>
+  </section>
+   <section class="main-section" id="C++_Advanced">
+     <header>C++ Advanced</header>
+     <article>
+       <p>So far, we have been using the iostream standard library, which provides cin and cout methods for reading from standard input and writing to standard output respectively.</p>
+       <p>C++ library called fstream, which defines three new data types -</p>
+       <li><strong>ofstream:</strong> This data type represents the output file stream and is used to create files and to write information to files.</li>
+       <li><strong>ifstream:</strong>This data type represents the input file stream and is used to read information from files.</li>
+       <li><strong>fstream:</strong>This data type represents the file stream generally, and has the capabilities of both ofstream and ifstream which means it can create files, write information to files, and read information from files.</li>
+     </article>
+  </section>
+  <section class="main-section" id="C++_Templates">
+    <header>C++ Templates</header>
+    <article>
+      <p>Templates are the foundation of generic programming, which involves writing code in a way that is independent of any particular type.</p>
+      <p>A template is a blueprint or formula for creating a generic class or a function. The library containers like iterators and algorithms are examples of generic programming and have been developed using template concept.</p>
+      <p>There is a single definition of each container, such as vector, but we can define many different kinds of vectors for example,  vector int, vector string.</p>
+    </article>
+  </section>
+  <section class="main-section" id="C++_Multithreading">
+    <header>C++ Multithreading</header>
+    <article>
+      <p>Multithreading is a specialized form of multitasking and a multitasking is the feature that allows your computer to run two or more programs concurrently. In general, there are two types of multitasking: process-based and thread-based.</p>
+      <p>Process-based multitasking handles the concurrent execution of programs. Thread-based multitasking deals with the concurrent execution of pieces of the same program.</p>
+      <p>A multithreaded program contains two or more parts that can run concurrently. Each part of such a program is called a thread, and each thread defines a separate path of execution.</p>
+      <p>C++ does not contain any built-in support for multithreaded applications. Instead, it relies entirely upon the operating system to provide this feature.</p>
+      <p>This tutorial assumes that you are working on Linux OS and we are going to write multi-threaded C++ program using POSIX. POSIX Threads, or Pthreads provides API which are available on many Unix-like POSIX systems such as FreeBSD, NetBSD, GNU/Linux, Mac OS X and Solaris.</p>
+    </article>
+  </section>
+    <section class="main-section" id="C++_Web_Programing">
+      <header>C++ Web Programing</header>
+      <article>
+        <p>To understand the concept of CGI, let's see what happens when we click a hyperlink to browse a particular web page or URL.</p>
+        <li>Your browser contacts the HTTP web server and demand for the URL ie. filename.</li>
+        <li>Web Server will parse the URL and will look for the filename. If it finds requested file then web server sends that file back to the browser otherwise sends an error message indicating that you have requested a wrong file.</li>
+        <li>Web browser takes response from web server and displays either the received file or error message based on the received response.</li>
+        <p>However, it is possible to set up the HTTP server in such a way that whenever a file in a certain directory is requested, that file is not sent back; instead it is executed as a program, and produced output from the program is sent back to your browser to display.</p>
+        <p>The Common Gateway Interface (CGI) is a standard protocol for enabling applications (called CGI programs or CGI scripts) to interact with Web servers and with clients. These CGI programs can be a written in Python, PERL, Shell, C or C++ etc.</p>
+      </article>
+  </section>
+  <section class="main-section" id="C++_Useful_Resource">
+    <header>C++ Useful Resource</header>
+    <article>
+      <p><a href="https://www.thefreecountry.com/sourcecode/cpp.shtml">Free Country</a> - The Free Country provides free C++ source code and C++ libraries for a number of C++ programming areas including compression, archiving, game programming, the Standard Template Library and GUI programming.</p>
+      <p><a href="http://www.hal9k.com/cug/">C and C++ Users Group</a> - The C and C++ Users Group provides free source code from C++ projects in a variety of programming areas including AI, animation, compilers, databases, debugging, encryption, games, graphics, GUI, language tools, system programming and more.</p>
+    </article>
+  </section>
+  <section class="main-section" id="C++_Standard_Library">
+    <header>C++ Standard Library</header>
+    <article>
+      <p>The C++ Standard Library can be categorized into two parts -</p>
+      <li><strong>The Standard Function Library</strong>- This library consists of general-purpose,stand-alone functions that are not part of any class. The function library is inherited from C.</li>
+      <li><strong>The Object Oriented Class Library</strong>    - This is a collection of classes and associated functions.</li>
+      <p>Standard C++ Library incorporates all the Standard C libraries also, with small additions and changes to support type safety.</p>
+    </article>
+  </section>
+  <section class="main-section" id="C++_Discussion">
+    <header>C++ Discussion</header>
+    <article>
+      <p>C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial adopts a simple and practical approach to describe the concepts of C++.</p>
+    </article>
+  </section>
+   <section class="main-section" id="Developers_Best_Practice">
+     <header>Developers Best Practice</header>
+     <article>
+       <p>This small tutorial is based on my past years of experience in software development industry. I have gone through different stages in my career starting from trainee software developer till senior management.</p>
+       <p>I do not want to keep my learnings to myself, so I had written a small tutorial few years ago, and after getting lot of motivation from my dear readers, I thought of revising it and adding few more learnings which may benefit many other software engineers and developers working in this lovely industry.</p>
+     </article>
+  </section>
+  <section class="main-section" id="HR_Interview_Questions">
+    <header>HR Interview Questions</header>
+    <article>
+      <p>An interview is a conversation between two or more people where questions are asked by the interviewer to elicit facts or statements from the interviewee. This is a useful tutorial that collects a set of most useful HR interview questions and how to answer them in a tactful manner.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <li>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com">Tutorials Point</a></li>
+    </article>
+  </section>
+ </main>
